@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --main--bg: #151515;
+    --principal-color-text: #fff;
+    --second-bg: #126E82;
+    --background-gradient: linear-gradient(var(--main--bg),  var(--second-bg));
+}
+
+body{
+    background: var(--background-gradient);
+    font-family: 'Mulish', sans-serif;
+}
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img {
+    width: 200px;
+    margin: 10px 0% 0% 10px;
+}
+
+/* Error */
+
+.main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__img {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+}
+
+.main__message {
+    font-size: 40px;
+    color: var(--principal-color-text);
+    animation-duration: 5.5s;
+    animation-fill-mode: both;  
+}
+
+@keyframes hinge {
+    0% {transform: rotate(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+    20%, 60% {transform: rotate(80deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+    40% {transform: rotate(60deg);transform-origin: top left;animation-timing-function: ease-in-out;}
+    80% {transform: rotate(60deg) translateY(0);transform-origin: top left;animation-timing-function: ease-in-out;}
+    100% {transform: translateY(200px); opacity: 0;}
+}
+.hinge {
+    margin: 20px;
+    animation-name: hinge;
+}
+
+
+/*Footer*/
+.footer {
+    display: flex;
+    align-items: center;
+    height: 106px;
+    width: 100%;
+    
+}
+
+.footer a {
+    color: var(--principal-color-text);
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+} 
