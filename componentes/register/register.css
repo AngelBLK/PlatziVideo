@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --main--bg: #151515;
+    --principal-color-text: #fff;
+    --second-bg: #126E82;
+    --background-gradient: linear-gradient( var(--second-bg), var(--main--bg));
+}
+
+body{
+    background: var(--background-gradient);
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.header {
+    background-color: var(--second-bg);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__img {
+    width: 200px;
+    margin: 10px 0% 0% 10px;
+}
+
+/* Log in */
+
+.register {
+    background: var(--background-gradient);
+    display: flex;
+    /*aling ajusta verticalmente*/
+    align-items: center;
+    /*justify ajusta horizontalmente*/
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.register__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    color: var(--principal-color-text);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 60px 40px;
+    min-height: 500px;
+    width: 325px;
+}
+
+.register__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register__container--form label {
+    font-size: 14px;
+}
+
+
+
+.register__container--social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social {
+    width: 30px;
+    margin-right: 10px;
+
+}
+
+/*Los inputs*/
+
+.input {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid var(--principal-color-text);
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    margin-bottom:20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+
+::placeholder {
+    color: var(--principal-color-text);
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0px;
+    border-radius: 25px;
+    color: var(--principal-color-text);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 106px;
+    width: 100%;
+    background: var(--main--bg)
+}
+
+.footer a {
+    color: var(--principal-color-text);
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+} 

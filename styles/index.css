@@ -119,12 +119,15 @@ body {
 
 .carousel {
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     padding: 30px;
     /*Todos los elementos dentro de este, se acomodaran relavos al elemento padre*/
     position: relative;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 .carousel__container {
@@ -217,6 +220,8 @@ body {
 .carousel-item__details:hover {
     opacity: 1;
 }
+
+
 
 .footer {
     display: flex;
